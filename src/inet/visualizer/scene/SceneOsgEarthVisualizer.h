@@ -21,11 +21,10 @@
 #include "inet/common/geometry/common/CoordinateSystem.h"
 #include "inet/visualizer/base/SceneOsgVisualizerBase.h"
 
-#ifdef WITH_OSG
+#ifdef WITH_OSGEARTH
 #include <osgEarth/MapNode>
 #include <osgEarthAnnotation/RectangleNode>
-#include <osgEarth/GeoTransform>
-#endif // ifdef WITH_OSG
+#endif // ifdef WITH_OSGEARTH
 
 namespace inet {
 
@@ -33,7 +32,7 @@ namespace visualizer {
 
 class INET_API SceneOsgEarthVisualizer : public SceneOsgVisualizerBase
 {
-#ifdef WITH_OSG
+#ifdef WITH_OSGEARTH
 
   protected:
     IGeographicCoordinateSystem *coordinateSystem = nullptr;
@@ -49,7 +48,7 @@ class INET_API SceneOsgEarthVisualizer : public SceneOsgVisualizerBase
     virtual void initializeLocator();
     virtual void initializeViewpoint();
 
-#endif // ifdef WITH_OSG
+#endif // ifdef WITH_OSGEARTH
 };
 
 } // namespace visualizer
