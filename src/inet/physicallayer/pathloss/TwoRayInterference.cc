@@ -6,6 +6,13 @@ namespace physicallayer {
 
 Define_Module(TwoRayInterference);
 
+namespace
+{
+
+constexpr double squared(double x) { return x * x; }
+
+} // namespace
+
 TwoRayInterference::TwoRayInterference() :
     epsilon_r(1.0)
 {
@@ -51,9 +58,9 @@ double TwoRayInterference::computeTwoRayInterference(const Coord& pos_t, const C
     const double gamma = sqrt(epsilon_r - cos_theta * cos_theta);
     const double Gamma = (sin_theta - gamma) / (sin_theta + gamma);
 
-    const double space = 4 * M_PI * unit(distance / lambda).get();
-    const double rays = sqrt(pow(1 + Gamma * cos(phi), 2) + Gamma * Gamma * pow(sin(phi), 2));
-    return pow(space / rays, -2);
+    const double space = squared(4 * M_PI * unit(distance / lambda).get());
+    const double interference = squared(1 + Gamma * cos(phi)) + Gamma * Gamma * squared(sin(phi));
+    return interference / space;
 }
 
 double TwoRayInterference::computePathLoss(mps propagationSpeed, Hz frequency, m distance) const
