@@ -16,7 +16,7 @@
 #ifndef __INET_RSVPPATHMSG_H
 #define __INET_RSVPPATHMSG_H
 
-#include "RSVPPathMsg_m.h"
+#include "inet/networklayer/rsvp_te/RSVPPathMsg_m.h"
 
 namespace inet {
 

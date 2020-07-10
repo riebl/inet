@@ -21,7 +21,7 @@
 #define __INET_TLVOPTION_H_
 
 #include "inet/common/INETDefs.h"
-#include "TLVOption_m.h"
+#include "inet/common/TLVOption_m.h"
 
 namespace inet {
 

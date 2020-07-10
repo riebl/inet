@@ -24,7 +24,7 @@
 #include "RSVPPathMsg.h"
 #include "RSVPResvMsg.h"
 #include "RSVPHelloMsg.h"
-#include "SignallingMsg_m.h"
+#include "inet/networklayer/rsvp_te/SignallingMsg_m.h"
 #include "inet/networklayer/rsvp_te/IRSVPClassifier.h"
 #include "inet/common/lifecycle/ILifecycle.h"
 

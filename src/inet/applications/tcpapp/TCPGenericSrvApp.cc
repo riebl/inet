@@ -22,7 +22,7 @@
 #include "inet/common/lifecycle/NodeStatus.h"
 #include "inet/transportlayer/contract/tcp/TCPSocket.h"
 #include "inet/transportlayer/contract/tcp/TCPCommand_m.h"
-#include "GenericAppMsg_m.h"
+#include "inet/applications/tcpapp/GenericAppMsg_m.h"
 
 namespace inet {
 

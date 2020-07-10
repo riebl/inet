@@ -34,7 +34,7 @@
 #include "inet/transportlayer/contract/udp/UDPSocket.h"
 #include "inet/transportlayer/contract/tcp/TCPSocket.h"
 #include "inet/transportlayer/contract/sctp/SCTPSocket.h"
-#include "NetPerfMeter_m.h"
+#include "inet/applications/netperfmeter/NetPerfMeter_m.h"
 #include "inet/transportlayer/contract/tcp/TCPCommand_m.h"
 #include "inet/transportlayer/contract/sctp/SCTPCommand_m.h"
 #include "inet/transportlayer/contract/udp/UDPControlInfo_m.h"

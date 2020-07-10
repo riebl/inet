@@ -17,7 +17,7 @@
 
 #include "inet/applications/tcpapp/TCPGenericSrvThread.h"
 
-#include "GenericAppMsg_m.h"
+#include "inet/applications/tcpapp/GenericAppMsg_m.h"
 
 namespace inet {
 

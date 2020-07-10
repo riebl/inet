@@ -24,7 +24,7 @@
 #include "inet/common/lifecycle/NodeStatus.h"
 #include "inet/networklayer/common/L3AddressResolver.h"
 #include "PacketDrillUtils.h"
-#include "PacketDrillInfo_m.h"
+#include "inet/applications/packetdrill/PacketDrillInfo_m.h"
 #include "inet/transportlayer/udp/UDPPacket_m.h"
 #include "inet/networklayer/ipv4/IPv4Datagram_m.h"
 #include "inet/transportlayer/contract/sctp/SCTPCommand_m.h"

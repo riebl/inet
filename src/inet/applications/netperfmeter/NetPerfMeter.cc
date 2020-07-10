@@ -26,7 +26,7 @@
 // *   Contact: dreibh@iem.uni-due.de
 
 #include "NetPerfMeter.h"
-#include "NetPerfMeter_m.h"
+#include "inet/applications/netperfmeter/NetPerfMeter_m.h"
 
 #include "inet/networklayer/common/L3AddressResolver.h"
 
